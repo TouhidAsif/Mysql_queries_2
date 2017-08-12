@@ -1,0 +1,40 @@
+Normalization:
+The process of separating your data into tables and creating primary keys is callednormalization.Its main goal is to make sure each piece of information appears in the database only once.
+
+What is disadvantages not to ensure normalization?
+1.Duplicating data
+2.Large database
+3.Larger Access time for data
+4.Inefficient Process
+
+First Normal Form :
+Three Conditions here to fillup---
+There should be no repeating columns containing the same kind of data.
+All columns should contain a single value.
+There should be a primary key to uniquely identify each row.
+Second Normal Form:
+After Ensuring 1st Normal Form you should think abour
+2nd normal form.2nd normal form deals with redundancy across multiple rows where first normal form deals with duplicate data across multiple columns.
+
+Third Normal Form:
+After ensuring 1st and 2nd normal form for our database now its time for 3rd normal form if we want to make our database more stronger.
+In this form we need to see which data are not directly dependent on the primary key rather they are dependent on another value,then we should moved into seperate tables according to dependence
+
+Disadvantage of Normalization:
+1.It can slow down our database accessing process
+2.Lengthy process
+
+Relationships:
+1.One to One (Like marriage)-Its rarely happen
+  Example:
+   USA(state)------United States Of America(Abbreviation)
+2.One to Many(/Many to one)
+  when one row in one table is linked to many rows in 
+  another table
+  Example:
+   Maijdee----------living People
+3.Many to many
+  When multiple row in one table is linked to multiple rows   in another table
+  Example
+   Book------------Student
+
